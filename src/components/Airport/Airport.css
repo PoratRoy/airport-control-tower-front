@@ -1,0 +1,12 @@
+
+.airport-continer{
+    position: fixed;
+    height: 59vh;
+    width: 50%;
+    background-color: rgba(0, 0, 0 ,0.1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

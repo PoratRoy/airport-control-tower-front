@@ -1,0 +1,53 @@
+
+.plane{
+    height: 7vh;
+    width: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.plane:hover{
+    cursor: pointer;
+}
+
+.strip1,
+.strip2,
+.strip3,
+.strip4 {  
+    transform: rotate(270deg);
+}
+.strip1 .plane-name,
+.strip2 .plane-name,
+.strip3 .plane-name,
+.strip4 .plane-name{
+    transform: rotate(90deg);
+}
+
+.strip5,
+.strip6.land,
+.strip7.land{
+    transform: rotate(180deg);
+}
+.strip5 .plane-name,
+.strip6.land .plane-name,
+.strip7.land .plane-name{
+    transform: rotate(180deg);
+}
+
+
+.land{
+    background-image: url('../../img/airplane2.png');
+}
+
+.of{
+    background-image: url('../../img/airplane4.png');
+}
+
+.not-proper{
+    background-image: url('../../img/airplane1.png');
+}

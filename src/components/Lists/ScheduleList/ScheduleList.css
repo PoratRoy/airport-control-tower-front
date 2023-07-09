@@ -1,0 +1,32 @@
+.data-continer{
+    height: auto;
+    width: 40vw;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left:30vw;
+    padding: 0.5em 0;
+}
+
+.data-title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgb(231, 231, 231);
+}
+
+.data-list{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgb(190, 181, 181);
+}
+
+.data-list li{
+    margin-bottom: 0.5em;
+    margin-right: 1.5em;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}

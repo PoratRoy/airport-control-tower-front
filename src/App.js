@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Airport from "./components/Airport/Airport";
+import LandingList from './components/Lists/LandingList/LandingList'
+import TakeofList from './components/Lists/TakeofList/TakeofList'
+import ScheduleList from './components/Lists/ScheduleList/ScheduleList'
+import { SocketContext, socket } from "./context/socketContext";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SocketContext.Provider value={{ socket }}>
+      <div>
+        <ScheduleList/>
+        <LandingList/>
+        <Airport />
+        <TakeofList/>
+      </div>
+    </SocketContext.Provider>
   );
 }
 
